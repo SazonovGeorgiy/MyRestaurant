@@ -17,6 +17,7 @@ namespace ConsoleApp1
         {
 
             var c  = JsonConvert.DeserializeObject<Restaurants>(File.ReadAllText(fileName));
+
             return c.RestaurantsArray;
         }
     }
