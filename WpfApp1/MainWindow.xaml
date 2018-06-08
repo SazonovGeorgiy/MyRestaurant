@@ -1,0 +1,23 @@
+﻿<Window x:Class="TeamProjectUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeamProjectUI"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="346.804" Width="489.84">
+    <Grid Margin="0,0,35,1">
+        <Label
+            Content="       Welcome" Margin="165,37,118,238"
+            FontSize="20" RenderTransformOrigin="0.5,0.5"/>
+
+        <Button 
+            Content="Далее" 
+            FontSize="15" 
+            Margin="198,145,162,137" Click="Welcome" RenderTransformOrigin="0.408,0.691"/>
+        <Button
+            Content="Exit" 
+            Margin="0,0,10,10" Click="Exit" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,107 @@
+﻿<Window x:Class="WpfApp1.RegistrationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TeamProjectUI"
+        mc:Ignorable="d"
+        Title="RegistrationWindow" Height="434.211" Width="410.526">
+    <Grid>
+        <Label
+            Content="Login" 
+            HorizontalAlignment="Left"
+            Margin="22,19,0,0" 
+            VerticalAlignment="Top" 
+            RenderTransformOrigin="0.158,0.269"
+            Height="27" Width="46"/>
+        
+        <TextBox
+            HorizontalAlignment="Left" 
+            Height="23" 
+            Margin="125,23,0,0" 
+            TextWrapping="Wrap" 
+            Text="Login"
+            VerticalAlignment="Top"
+            Width="137"/>
+        
+        <Label 
+            Content="Password" 
+            HorizontalAlignment="Left"
+            Margin="22,51,0,0" 
+            VerticalAlignment="Top"
+            Width="61"/>
+        
+        <TextBox 
+            HorizontalAlignment="Left" 
+            Height="23"
+            Margin="125,57,0,0" 
+            TextWrapping="Wrap"
+            Text="Password"
+            VerticalAlignment="Top" 
+            Width="137" />
+        
+        <Label 
+            Content="Phone"
+            HorizontalAlignment="Left"
+            Margin="22,82,0,0"
+            VerticalAlignment="Top"
+            Width="46"/>
+        
+        <TextBox 
+            HorizontalAlignment="Left"
+            Height="23" 
+            Margin="125,85,0,0"
+            TextWrapping="Wrap" 
+            Text="Phone"
+            VerticalAlignment="Top"
+            Width="137"/>
+        
+        <TextBox
+            HorizontalAlignment="Left"
+            Height="23" 
+            Margin="125,113,0,0" 
+            TextWrapping="Wrap"
+            Text="FavouriteDay"
+            VerticalAlignment="Top"
+            Width="137"/>
+        
+        <Label 
+            Content="FavouriteDay"
+            HorizontalAlignment="Left"
+            Margin="22,113,0,0" 
+            VerticalAlignment="Top"
+            Width="87"/>
+        
+        <Label 
+            Content="FavouriteTime"
+            HorizontalAlignment="Left" 
+            Margin="22,144,0,0" 
+            VerticalAlignment="Top" 
+            Width="87"/>
+        
+        <TextBox 
+            HorizontalAlignment="Left"
+            Height="23" 
+            Margin="125,147,0,0" 
+            TextWrapping="Wrap
+            " Text="FavouriteTime"
+            VerticalAlignment="Top"
+            Width="137"/>
+        
+        <Button 
+            Content="Exit"
+            HorizontalAlignment="Left" 
+            Height="27"
+            Margin="321,332,0,0" 
+            VerticalAlignment="Top" 
+            Width="57" Click="Exit"/>
+
+        <Button 
+            Content="Register now!" 
+            HorizontalAlignment="Left"
+            Height="34" 
+            Margin="132,228,0,0"
+            VerticalAlignment="Top" 
+            Width="111" Click="Registrate"/>
+    </Grid>
+</Window>
