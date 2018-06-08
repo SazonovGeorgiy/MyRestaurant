@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-
+#region Parser
     public class JSONParser
     {
-        const string fileName = "Restaurant.json";
-        public List<Restaurant> parser ()
-        {
+        const string fileName = "../../../Restaurant.json";
 
-            var c  = JsonConvert.DeserializeObject<Restaurants>(File.ReadAllText(fileName));
-
-            return c.RestaurantsArray;
+        public static List<Restaurant> ParsIt () //Парсинг и распределение по листам
+        {                                          
+            var data  = JsonConvert.DeserializeObject<Restaurants>(File.ReadAllText(fileName));
+            return data.RestaurantsArray;
         }
     }
+#endregion
 
 }

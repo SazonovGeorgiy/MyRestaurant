@@ -11,8 +11,8 @@ namespace ConsoleApp1
     class ScheduleItem
     {
         [DataMember]
-        public string Time;
+        public string _time;
         [DataMember]
-        public int Freetables;
+        public int _freetables;
     }
 }

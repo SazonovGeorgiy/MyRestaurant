@@ -20,11 +20,20 @@ namespace WpfApp1
     /// </summary>
     public partial class MainWindow : Window
     {
+        public List<Restaurant> restaurants;
         public MainWindow()
         {
             InitializeComponent();
-            JSONParser parser = new JSONParser();
-            var res = parser.parser();
+           restaurants = JSONParser.ParsIt();
+            cmdAnswer_Click(restaurants);
         }
+        
+    private void cmdAnswer_Click(object sender)
+        {
+            txtAnswer.Text = restaurants[0]._address;
+            this.Cursor = null;
+        }
+
+
     }
 }

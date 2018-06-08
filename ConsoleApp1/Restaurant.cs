@@ -11,8 +11,16 @@ namespace ConsoleApp1
     public class Restaurant
     {
         [DataMember]
-        public string Name;
+        public string _name;
         [DataMember]
         List<ScheduleItem> Schedule = new List<ScheduleItem>();
+        [DataMember]
+        public long _phone;
+        [DataMember]
+        public string _metroStation;
+        [DataMember]
+        public string _address;
+
+
     }
 }
