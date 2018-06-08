@@ -94,9 +94,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ConsoleApp1\ConsoleApp1.csproj">
+    <ProjectReference Include="..\ConsoleApp1\TeamProject.Core.csproj">
       <Project>{f334fa8d-9322-48cf-9812-5f92fe842ad1}</Project>
-      <Name>ConsoleApp1</Name>
+      <Name>TeamProject.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

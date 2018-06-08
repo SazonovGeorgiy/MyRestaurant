@@ -17,7 +17,8 @@ namespace ConsoleApp1
         public static List<Restaurant> ParsIt () //Парсинг и распределение по листам
         {                                          
             var data  = JsonConvert.DeserializeObject<Restaurants>(File.ReadAllText(fileName));
-            return data.RestaurantsArray;
+            return data.RestaurantsArray; 
+            
         }
     }
 #endregion
