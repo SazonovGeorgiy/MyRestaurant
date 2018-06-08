@@ -1,0 +1,9 @@
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\ConsoleApp1\bin\Debug\ConsoleApp1.dll.config
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\ConsoleApp1\bin\Debug\ConsoleApp1.dll
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\ConsoleApp1\obj\Debug\ConsoleApp1.dll
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
