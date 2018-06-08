@@ -49,10 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JSONParser.cs" />
+    <Compile Include="JsonParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restaurant.cs" />
-    <Compile Include="Restaurants.cs" />
     <Compile Include="ScheduleItem.cs" />
   </ItemGroup>
   <ItemGroup>

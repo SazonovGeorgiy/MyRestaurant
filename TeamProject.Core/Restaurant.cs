@@ -20,6 +20,8 @@ namespace ConsoleApp1
         public string _metroStation;
         [DataMember]
         public string _address;
+        [DataMember]
+        public string _tables;
 
 
     }

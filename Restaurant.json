@@ -7,85 +7,150 @@
         "_address": "Myasnitskaya street 9/11",
         "_phone": 84955445000,
         "_tables": 20,
-        "Schedule": [
+        "Schedule": 
+          [
+            {
+              "_time": "8:00",
+              "_freetables": 18
+            },
+            {
+              "_time": "9:00",
+              "_freetables": 17
+            },
+            {
+              "_time": "10:00",
+              "_freetables": 16
+            },
+            {
+              "_time": "11:00",
+              "_freetables": 15
+            },
+            {
+              "_time": "12:00",
+              "_freetables": 14
+            },
+            {
+              "_time": "13:00",
+              "_freetables": 12
+            },
+            {
+              "_time": "14:00",
+              "_freetables": 7
+            },
+            {
+              "_time": "15:00",
+              "_freetables": 9
+            },
+            {
+              "_time": "16:00",
+              "_freetables": 6
+            },
+            {
+              "_time": "17:00",
+              "_freetables": 3
+            },
+            {
+              "_time": "18:00",
+              "_freetables": 1
+            },
+            {
+              "_time": "19:00",
+              "_freetables": 2
+            },
+            {
+              "_time": "20:00",
+              "_freetables": 3
+            },
+            {
+              "_time": "21:00",
+              "_freetables": 5
+            },
+            {
+              "_time": "22:00",
+              "_freetables": 8
+            },
+            {
+              "_time": "23:00",
+              "_freetables": 12
+            },
+            {
+              "_time": "00:00",
+              "_freetables": 14
+            },
+            {
+              "_time": "01:00",
+              "_freetables": 18
+            },
+            {
+              "_time": "02:00",
+              "_freetables": 20
+            }
+          ]
+        },
           {
-            "_time": "8:00",
-            "_freetables": 18
-          },
-          {
-            "_time": "9:00",
-            "_freetables": 17
-          },
-          {
-            "_time": "10:00",
-            "_freetables": 16
-          },
-          {
-            "_time": "11:00",
-            "_freetables": 15
-          },
-          {
-            "_time": "12:00",
-            "_freetables": 14
-          },
-          {
-            "_time": "13:00",
-            "_freetables": 12
-          },
-          {
-            "_time": "14:00",
-            "_freetables": 7
-          },
-          {
-            "_time": "15:00",
-            "_freetables": 9
-          },
-          {
-            "_time": "16:00",
-            "_freetables": 6
-          },
-          {
-            "_time": "17:00",
-            "_freetables": 3
-          },
-          {
-            "_time": "18:00",
-            "_freetables": 1
-          },
-          {
-            "_time": "19:00",
-            "_freetables": 2
-          },
-          {
-            "_time": "20:00",
-            "_freetables": 3
-          },
-          {
-            "_time": "21:00",
-            "_freetables": 5
-          },
-          {
-            "_time": "22:00",
-            "_freetables": 8
-          },
-          {
-            "_time": "23:00",
-            "_freetables": 12
-          },
-          {
-            "_time": "00:00",
-            "_freetables": 14
-          },
-          {
-            "_time": "01:00",
-            "_freetables": 18
-          },
-          {
-            "_time": "02:00",
-            "_freetables": 20
+            "_metroStation": "Kitay-Gorod",
+            "_name": "FARSH",
+            "_address": "Nikolskaya street 12",
+            "_phone": 84952584205,
+            "_tables": 30,
+            "Schedule": [
+              {
+                "_time": "10:00",
+                "_freetables": 10
+              },
+              {
+                "_time": "11:00",
+                "_freetables": 8
+              },
+              {
+                "_time": "12:00",
+                "_freetables": 7
+              },
+              {
+                "_time": "13:00",
+                "_freetables": 4
+              },
+              {
+                "_time": "14:00",
+                "_freetables": 2
+              },
+              {
+                "_time": "15:00",
+                "_freetables": 7
+              },
+              {
+                "_time": "16:00",
+                "_freetables": 10
+              },
+              {
+                "_time": "17:00",
+                "_freetables": 2
+              },
+              {
+                "_time": "18:00",
+                "_freetables": 5
+              },
+              {
+                "_time": "19:00",
+                "_freetables": 4
+              },
+              {
+                "_time": "20:00",
+                "_freetables": 1
+              },
+              {
+                "_time": "21:00",
+                "_freetables": 3
+              },
+              {
+                "_time": "22:00",
+                "_freetables": 2
+              },
+              {
+                "_time": "23:00",
+                "_freetables": 4
+              }
+            ]
           }
-
         ]
-      }
-		]
 }

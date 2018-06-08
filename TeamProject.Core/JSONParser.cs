@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Runtime.Serialization.Json;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp1
 {
 #region Parser
-    public class JSONParser
+    public class JsonParser
     {
         const string fileName = "../../../Restaurant.json";
 
@@ -21,6 +22,13 @@ namespace ConsoleApp1
             
         }
     }
-#endregion
+    [DataContract]
+    public class Restaurants
+    {
+        [DataMember]
+        public List<Restaurant> RestaurantsArray;
+
+    }
+    #endregion
 
 }

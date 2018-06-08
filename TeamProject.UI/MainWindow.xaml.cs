@@ -23,15 +23,14 @@ namespace WpfApp1
         public List<Restaurant> restaurants;
         public MainWindow()
         {
-            InitializeComponent();
-           restaurants = JSONParser.ParsIt();
+           InitializeComponent();
+           restaurants = JsonParser.ParsIt();
             cmdAnswer_Click(restaurants);
         }
         
     private void cmdAnswer_Click(object sender)
         {
             txtAnswer.Text = restaurants[0]._address;
-            this.Cursor = null;
         }
 
 
