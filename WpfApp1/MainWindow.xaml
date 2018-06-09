@@ -5,20 +5,47 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeamProjectUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="346.804" Width="489.84">
-    <Grid Margin="0,0,35,1">
+        Title="MainWindow" Height="346.804" Width="484.285">
+
+    <Grid
+        Background="Tan">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="161*"/>
+            <RowDefinition Height="155*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="239*"/>
+            <ColumnDefinition Width="237*"/>
+        </Grid.ColumnDefinitions>
+
         <Label
-            Content="       Welcome" Margin="165,37,118,238"
-            FontSize="20" RenderTransformOrigin="0.5,0.5"/>
+            Content=" Welcome"
+            Margin="160,20,154,82"
+            FontSize="30" 
+            RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
 
         <Button 
             Content="Далее" 
             FontSize="15" 
-            Margin="197,127,163,155" Click="Welcome" RenderTransformOrigin="0.408,0.691"/>
+            Margin="185,42,175,79" 
+            Click="Welcome" 
+            RenderTransformOrigin="0.408,0.691" Grid.ColumnSpan="2" Grid.Row="1"/>
+
         <Button
             Content="Exit" 
-            Margin="0,0,10,10" Click="Exit" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
-        <TextBlock HorizontalAlignment="Left" Height="28" Margin="131,84,0,0" TextWrapping="Wrap" Text="Find Me a Table" VerticalAlignment="Top" Width="198"/>
+            Margin="0,0,10,10" 
+            Click="Exit"
+            Height="20" VerticalAlignment="Bottom" 
+            HorizontalAlignment="Right" Width="75" Grid.Column="1" Grid.Row="1"/>
+
+        <TextBlock 
+            HorizontalAlignment="Left" 
+            Height="28"
+            Margin="160,113,0,0" 
+            TextWrapping="Wrap" 
+            Text="Find Me a Table"
+            VerticalAlignment="Top" 
+            Width="198" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>

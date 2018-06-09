@@ -18,6 +18,7 @@ namespace ConsoleApp1.Parse_and_Hash
         {
             var userJson = JsonConvert.SerializeObject(user);
             File.WriteAllText("Users.json", userJson);
+
         }
     }
 }

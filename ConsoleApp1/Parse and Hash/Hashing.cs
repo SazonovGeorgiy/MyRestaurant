@@ -9,6 +9,7 @@ namespace TeamProjectCore
 {
     public static class Hashing
     {
+
         public static string GetHash(string password)
         {
             var md5 = MD5.Create();

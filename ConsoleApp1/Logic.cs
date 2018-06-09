@@ -13,21 +13,17 @@ namespace ConsoleApp1
 
         List<Restaurant> restaurants = null;
         List<ScheduleItem> tables;
-        
+     
+
         public List<ScheduleItem> FindATable(int currenttime, List<Restaurant> restaurants)
         {
             int j = 0;
             for (j = 0; j < restaurants.Count; j++)
             {
 
-            }                   //restaurants[j].Schedule.Capacity
+            }
             for (int i = 0; i < 14; i++)
             {
-                                                                  //restaurants[j].Schedule[i]._time
-                //if (string.Equals(currenttime.ToString() + ":00", restaurants[j].Schedule[i]._time))
-                //{
-                //    File.Open ("Hi.txt", FileMode.OpenOrCreate);
-                //}
             }
             return tables;
         }

@@ -22,6 +22,8 @@ namespace WpfApp1
     public partial class RegistrationWindow : Window
     {
         User user;
+        List<User> users = new List<User>();
+
         public RegistrationWindow()
         {
             InitializeComponent();
@@ -29,13 +31,14 @@ namespace WpfApp1
 
         public void Registrate(object sender, RoutedEventArgs e)
         {
-            var rW = new RegistrationWindow();
             var _login = Login.Text;
             var _password = Hashing.GetHash(Password.Password);
             Enum _day = null;
             DateTime _time = DateTime.MinValue;
             long.TryParse(Phone.Text, out var _phone);
+
             //Было бы неплохо создать определенный метод CheckData для работы со всем этим добром
+
             if (Login.Text != "" && Password.Password != "" && Phone.Text != "")
             {
                 try
@@ -58,8 +61,11 @@ namespace WpfApp1
             {
                 MessageBox.Show("You have to fill the gaps with stars. It's necessary.", "Error");
             }
+
             user = new User(_login, _password, _phone, _day, _time);
             Registration.Registrate(user);
+            users.Add(user);
+
             //Необходимо сделать вызов окна доступным только при всех верно введенных данных
             var sW = new Successfully();
             sW.Show();
