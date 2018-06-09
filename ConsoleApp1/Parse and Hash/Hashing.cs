@@ -12,6 +12,7 @@ namespace TeamProjectCore
 
         public static string GetHash(string password)
         {
+            //Commit
             var md5 = MD5.Create();
             var hash = md5.ComputeHash(Encoding.UTF8.GetBytes(password));
             return Convert.ToBase64String(hash);
