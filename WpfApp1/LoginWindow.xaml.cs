@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using TeamProjectCore;
 using WpfApp1;
 
 namespace TeamProjectUI
@@ -20,6 +21,7 @@ namespace TeamProjectUI
     /// </summary>
     public partial class LoginWindow : Window
     {
+        public User user;
         public LoginWindow()
         {
             InitializeComponent();
@@ -29,6 +31,18 @@ namespace TeamProjectUI
         {
             var rW = new RegistrationWindow();
             rW.Show();
+            Close();
+        }
+
+        private void Enter(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void VIP (object sender, RoutedEventArgs e)
+        {
+            var VW = new VIPWindow();
+            VW.Show();
             Close();
         }
     }

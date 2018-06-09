@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Sigh up or sign in" Height="338.346" Width="410.526">
     <Grid>
-        
+
         <Label
             Content="Login"
             HorizontalAlignment="Left"
@@ -15,29 +15,21 @@
             VerticalAlignment="Top" 
             Width="42" 
             RenderTransformOrigin="0.292,0.08"/>
-        
+
         <Label 
             Content="Password"
             HorizontalAlignment="Left" 
             Margin="27,55,0,0" 
             VerticalAlignment="Top" 
             Width="70"/>
-        
+
         <TextBox 
             HorizontalAlignment="Left" 
             Height="23" TextWrapping="Wrap" 
             VerticalAlignment="Top" 
             Width="150" Margin="88,21,0,0"
-            Text="Login"/>
-        
-        <TextBox 
-            HorizontalAlignment="Left" 
-            Height="23" Margin="88,55,0,0" 
-            TextWrapping="Wrap" 
-            Text="Password" 
-            VerticalAlignment="Top" 
-            Width="120"/>
-        
+            Name="Login"/>
+
         <Button 
             Content="Don't have an account?" 
             HorizontalAlignment="Left"
@@ -47,5 +39,29 @@
             RenderTransformOrigin="0.5,0.389"
             Click="Registration"/>
         
+        <PasswordBox 
+            Name="Password"
+            HorizontalAlignment="Left"
+            Margin="88,55,0,0" 
+            VerticalAlignment="Top"
+            Width="150"/>
+        
+        <Button 
+            Content="Sign in"
+            HorizontalAlignment="Left"
+            Margin="88,103,0,0"
+            VerticalAlignment="Top"
+            Width="75"
+            Click="Enter"/>
+        
+        <Button
+            Content="I'm VIP" 
+            HorizontalAlignment="Left"
+            Height="30"
+            Margin="246,93,0,0"
+            VerticalAlignment="Top"
+            Width="112"
+            Click="VIP"/>
+
     </Grid>
 </Window>

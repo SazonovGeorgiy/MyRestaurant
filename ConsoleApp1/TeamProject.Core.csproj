@@ -49,17 +49,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hashing.cs" />
-    <Compile Include="IUser.cs" />
-    <Compile Include="JsonParser.cs" />
+    <Compile Include="Logic.cs" />
+    <Compile Include="Parse and Hash\Hashing.cs" />
+    <Compile Include="Parse and Hash\Registration.cs" />
+    <Compile Include="Users\IUser.cs" />
+    <Compile Include="Parse and Hash\JsonParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Restaurant.cs" />
-    <Compile Include="ScheduleItem.cs" />
-    <Compile Include="User.cs" />
+    <Compile Include="Components\ScheduleItem.cs" />
+    <Compile Include="Users\User.cs" />
+    <Compile Include="Users\VIPUser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

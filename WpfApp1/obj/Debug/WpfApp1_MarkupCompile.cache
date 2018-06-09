@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\App.xaml
-4-1372547690
+6566800732
 
-859067235
+1041081460
 14-1651203720
-MainWindow.xaml;LoginWindow.xaml;ErrorWindow.xaml;RegistrationWindow.xaml;
+MainWindow.xaml;LoginWindow.xaml;Notices\ErrorWindow.xaml;RegistrationWindow.xaml;Notices\Successfully.xaml;VIPWindow.xaml;
 
 False
 

@@ -8,10 +8,10 @@ namespace TeamProjectCore
 {
     public interface IUser
     {
-        string HashedPassword { get; set; }
+        string Password { get; set; }
         long Phone { get; set; }
         string Login { get; set; }
-        DateTime FavouriteDay { get; set; }
+        Enum FavouriteDay { get; set; }
         DateTime FavouriteTime { get; set; }
     }
 }

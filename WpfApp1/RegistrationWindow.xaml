@@ -8,7 +8,7 @@
         Title="RegistrationWindow" Height="434.211" Width="410.526">
     <Grid>
         <Label
-            Content="Login" 
+            Content="Login*" 
             HorizontalAlignment="Left"
             Margin="22,19,0,0" 
             VerticalAlignment="Top" 
@@ -20,39 +20,38 @@
             Height="23" 
             Margin="125,23,0,0" 
             TextWrapping="Wrap" 
-            Text="Login"
+            Name="Login"
             VerticalAlignment="Top"
             Width="137"/>
         
         <Label 
-            Content="Password" 
+            Content="Password*" 
             HorizontalAlignment="Left"
             Margin="22,51,0,0" 
             VerticalAlignment="Top"
-            Width="61"/>
+            Width="72"/>
         
-        <TextBox 
+        <PasswordBox
             HorizontalAlignment="Left" 
             Height="23"
             Margin="125,57,0,0" 
-            TextWrapping="Wrap"
-            Text="Password"
+            Name="Password"
             VerticalAlignment="Top" 
             Width="137" />
         
         <Label 
-            Content="Phone"
+            Content="Phone*"
             HorizontalAlignment="Left"
             Margin="22,82,0,0"
             VerticalAlignment="Top"
-            Width="46"/>
+            Width="61"/>
         
         <TextBox 
             HorizontalAlignment="Left"
             Height="23" 
             Margin="125,85,0,0"
             TextWrapping="Wrap" 
-            Text="Phone"
+            Name="Phone"
             VerticalAlignment="Top"
             Width="137"/>
         
@@ -61,19 +60,19 @@
             Height="23" 
             Margin="125,113,0,0" 
             TextWrapping="Wrap"
-            Text="FavouriteDay"
+            Name="FavouriteDay"
             VerticalAlignment="Top"
             Width="137"/>
         
         <Label 
-            Content="FavouriteDay"
+            Content="Favourite Day"
             HorizontalAlignment="Left"
             Margin="22,113,0,0" 
             VerticalAlignment="Top"
             Width="87"/>
         
         <Label 
-            Content="FavouriteTime"
+            Content="Favourite Time"
             HorizontalAlignment="Left" 
             Margin="22,144,0,0" 
             VerticalAlignment="Top" 
@@ -83,8 +82,8 @@
             HorizontalAlignment="Left"
             Height="23" 
             Margin="125,147,0,0" 
-            TextWrapping="Wrap
-            " Text="FavouriteTime"
+            TextWrapping="Wrap"
+            Name="FavouriteTime"
             VerticalAlignment="Top"
             Width="137"/>
         

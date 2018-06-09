@@ -20,7 +20,11 @@ C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\WpfApp1.ex
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\WpfApp1.pdb
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\LoginWindow.g.cs
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\LoginWindow.baml
-C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\ErrorWindow.g.cs
-C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\ErrorWindow.baml
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\RegistrationWindow.g.cs
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\RegistrationWindow.baml
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\VIPWindow.g.cs
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\VIPWindow.baml
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\ErrorWindow.g.cs
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\Successfully.g.cs
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\ErrorWindow.baml
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\Successfully.baml

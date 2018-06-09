@@ -14,10 +14,11 @@
         <Button 
             Content="Далее" 
             FontSize="15" 
-            Margin="198,145,162,137" Click="Welcome" RenderTransformOrigin="0.408,0.691"/>
+            Margin="197,127,163,155" Click="Welcome" RenderTransformOrigin="0.408,0.691"/>
         <Button
             Content="Exit" 
             Margin="0,0,10,10" Click="Exit" Height="20" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="75"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="131,84,0,0" TextWrapping="Wrap" Text="Find Me a Table" VerticalAlignment="Top" Width="198"/>
 
     </Grid>
 </Window>

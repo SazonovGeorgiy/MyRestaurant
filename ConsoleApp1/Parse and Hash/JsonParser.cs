@@ -13,11 +13,11 @@ namespace TeamProjectCore
 #region Parser
     public class JsonParser
     {
-        const string fileName = "../../../Restaurant.json";
+        const string FileName = "../../../Restaurant.json";
 
         public static List<Restaurant> ParsIt () //Парсинг и распределение по листам
         {                                          
-            var data  = JsonConvert.DeserializeObject<Restaurants>(File.ReadAllText(fileName));
+            var data  = JsonConvert.DeserializeObject<Restaurants>(File.ReadAllText(FileName));
             return data.RestaurantsArray; 
             
         }

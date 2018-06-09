@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace TeamProjectCore
 {
     [DataContract]
-    class ScheduleItem
+    public class ScheduleItem
     {
         [DataMember]
         public string _time;

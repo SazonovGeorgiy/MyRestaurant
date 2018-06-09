@@ -13,7 +13,7 @@ namespace TeamProjectCore
         [DataMember]
         public string _name;
         [DataMember]
-        List<ScheduleItem> Schedule = new List<ScheduleItem>();
+        public List<ScheduleItem> Schedule = new List<ScheduleItem>();
         [DataMember]
         public long _phone;
         [DataMember]

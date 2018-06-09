@@ -21,16 +21,16 @@ namespace TeamProjectUI
     /// </summary>
     public partial class MainWindow : Window
     {
-        public List<Restaurant> restaurants;
+        
         public MainWindow()
         {
            InitializeComponent();
-           restaurants = JsonParser.ParsIt();
+           
         }
 
         private void Welcome (object sender, RoutedEventArgs e)
         {
-            FileStream user = File.Open("Users.json", FileMode.OpenOrCreate);
+            FileStream file = File.Open("Users.json", FileMode.OpenOrCreate);
             var lW = new LoginWindow();
             lW.Show();
             Close();
