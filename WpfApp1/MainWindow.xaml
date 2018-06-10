@@ -5,47 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeamProjectUI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="346.804" Width="484.285">
+        WindowStartupLocation="CenterScreen"
+        Title="Find me a table!" Height="600" Width="1000">
+    <Grid>
+        <Image Source="back.jpg" Grid.Column="0" Grid.Row="0" Stretch="Fill"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="200"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
 
-    <Grid
-        Background="Tan">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="161*"/>
-            <RowDefinition Height="155*"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="239*"/>
-            <ColumnDefinition Width="237*"/>
-        </Grid.ColumnDefinitions>
 
-        <Label
-            Content=" Welcome"
-            Margin="160,20,154,82"
-            FontSize="30" 
-            RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2"/>
+            <Label
+                Content="Welcome"
+                Grid.Column="1"
+                Grid.Row="1"
+                HorizontalContentAlignment="Center"
+                VerticalContentAlignment="Center"
+                FontSize="140" FontStyle="Italic" Cursor="Arrow" FontFamily="Goudy Old Style"/>
 
-        <Button 
-            Content="Далее" 
-            FontSize="15" 
-            Margin="185,42,175,79" 
-            Click="Welcome" 
-            RenderTransformOrigin="0.408,0.691" Grid.ColumnSpan="2" Grid.Row="1"/>
+            <Button
+                ToolTip="Press the button"
+                Content="Сontinue" 
+                FontSize="48" 
+                Click="Welcome"
+                Grid.Row="2"
+                Margin="70,15,50,15" FontFamily="Goudy Old Style" FontWeight="Bold" HorizontalAlignment="Left" Grid.ColumnSpan="2" Width="200" Height="65">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </Button.Background>
+            </Button>
 
-        <Button
-            Content="Exit" 
-            Margin="0,0,10,10" 
-            Click="Exit"
-            Height="20" VerticalAlignment="Bottom" 
-            HorizontalAlignment="Right" Width="75" Grid.Column="1" Grid.Row="1"/>
 
-        <TextBlock 
-            HorizontalAlignment="Left" 
-            Height="28"
-            Margin="160,113,0,0" 
-            TextWrapping="Wrap" 
-            Text="Find Me a Table"
-            VerticalAlignment="Top" 
-            Width="198" Grid.ColumnSpan="2"/>
+            <Button
+                Content="Exit" 
+                Click="Exit"
+                FontSize="48" 
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Center"
+                Grid.Column="2"
+                Grid.Row="1" FontFamily="Goudy Old Style" FontWeight="Bold" Margin="10,10,10,50" Width="120" Height="65">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </Button.Background>
+            </Button>
 
+        </Grid>
     </Grid>
 </Window>

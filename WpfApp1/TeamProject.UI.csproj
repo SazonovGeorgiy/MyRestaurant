@@ -57,14 +57,17 @@
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Notices\ErrorWindow.xaml.cs">
-      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    <Compile Include="Notices\SuccessfullyEnter.xaml.cs">
+      <DependentUpon>SuccessfullyEnter.xaml</DependentUpon>
     </Compile>
     <Compile Include="RegistrationWindow.xaml.cs">
       <DependentUpon>RegistrationWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Notices\Successfully.xaml.cs">
       <DependentUpon>Successfully.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ResultWindow.xaml.cs">
+      <DependentUpon>ResultWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="VIPWindow.xaml.cs">
       <DependentUpon>VIPWindow.xaml</DependentUpon>
@@ -85,7 +88,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Notices\ErrorWindow.xaml">
+    <Page Include="Notices\SuccessfullyEnter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -94,6 +97,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Notices\Successfully.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResultWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -133,6 +140,16 @@
       <Project>{f334fa8d-9322-48cf-9812-5f92fe842ad1}</Project>
       <Name>TeamProject.Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="back.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resourses\back.JPG" />
+    <Resource Include="Resourses\button.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

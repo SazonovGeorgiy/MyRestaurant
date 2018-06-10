@@ -11,26 +11,32 @@ namespace ConsoleApp1
     public class Logic
     {
 
-        List<Restaurant> restaurants = null;
-        List<ScheduleItem> tables;
-     
+        
+        List<ScheduleItem> tables = new List<ScheduleItem>();
+
 
         public List<ScheduleItem> FindATable(int currenttime, List<Restaurant> restaurants)
         {
-            int j = 0;
-            for (j = 0; j < restaurants.Count; j++)
+            for (int i = 0; i < restaurants.Count; i++)
             {
-
-            }
-            for (int i = 0; i < 14; i++)
-            {
+                foreach (var item in restaurants[i].Schedule)
+                {
+                    var parts = item._time.Split(new[] { ':' }, StringSplitOptions.RemoveEmptyEntries);
+                    int.TryParse(parts[0], out var time);
+                    if (time == currenttime)
+                    {
+                        tables.Add(item);
+                    }
+                   
+                }
             }
             return tables;
         }
+
         public int TimeHelper(int currentime)
         {
-            if (currentime % 60 == 0) return currentime % 60;
-            return currentime / 60 + 1;
+            return currentime + 1;
+
         }
     }
 }

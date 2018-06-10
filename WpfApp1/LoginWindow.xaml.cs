@@ -27,7 +27,6 @@ namespace TeamProjectUI
         {
             InitializeComponent();
             ReadUsers.Read();
-            
         }
 
         private void Registration (object sender, RoutedEventArgs e)
@@ -80,5 +79,6 @@ namespace TeamProjectUI
             var hash = md5.ComputeHash(Encoding.UTF8.GetBytes(password));
             return Convert.ToBase64String(hash);
         }
+
     }
 }

@@ -34,19 +34,18 @@ namespace WpfApp1
             var _login = Login.Text;
             var _password = Hashing.GetHash(Password.Password);
             long.TryParse(Phone.Text, out var _phone);
-
-            //Было бы неплохо создать определенный метод CheckData для работы со всем этим добром
-
-            if (Login.Text != "" && Password.Password != "" && Phone.Text != "")
+            
+            if (_login != "" && _password != "" && Phone.Text != "")
             {
                 try
                 {
                     if (CheckEmailOnCorrect())
                     {
                         user = new User(_login, _password, _phone);
+                        if (User.users == null) User.users = new List<User>();
                         User.users.Add(user);
                         Registration.Registrate();
-                        //Необходимо сделать вызов окна доступным только при всех верно введенных данных
+                        
                         var sW = new Successfully();
                         sW.Show();
                         Close();
@@ -65,10 +64,6 @@ namespace WpfApp1
             {
                 MessageBox.Show("You have to fill the gaps with stars. It's necessary.", "Error");
             }
-
- 
-
-
         }
 
         public bool CheckEmailOnCorrect()
@@ -88,5 +83,6 @@ namespace WpfApp1
         {
             Close();
         }
+
     }
 }

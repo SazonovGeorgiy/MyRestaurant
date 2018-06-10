@@ -13,11 +13,10 @@ namespace ConsoleApp1.Parse_and_Hash
     [DataContract]
     public static class Registration
     {
-        const string FileName = "Users.json";
+        //const string FileName = "Users.json";
         public static void Registrate ()
         {
-            //var userJson = JsonConvert.SerializeObject(user);
-            //File.WriteAllText("Users.json", User.users);
+
             using (var sw = new StreamWriter("../../../Users.json"))
             {
                 using (var writer = new JsonTextWriter(sw))

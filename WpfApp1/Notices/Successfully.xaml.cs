@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TeamProjectCore;
+using TeamProjectUI;
 
 namespace WpfApp1
 {
@@ -31,10 +32,17 @@ namespace WpfApp1
         private void Find (object sender, RoutedEventArgs e)
         {
             List<Restaurant> restaurants = JsonParser.ParsIt();
-            int currentTime = DateTime.Now.Minute;
+            int currentTime = DateTime.Now.Hour;
             Logic logic = new Logic();
             currentTime = logic.TimeHelper(currentTime);
-            var result = logic.FindATable(currentTime, restaurants);
+            List<ScheduleItem> result = logic.FindATable(currentTime, restaurants);
+            var rW = new ResultWindow(result);
+            rW.Show();
+            Close();
+        }
+        private void Exit(object sender, RoutedEventArgs e)
+        {
+            Close();
         }
     }
 }

@@ -5,102 +5,112 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TeamProjectUI"
         mc:Ignorable="d"
-        Title="RegistrationWindow" Height="434.211" Width="410.526">
-    <Grid>
-        <Label
-            Content="E-mail*" 
-            HorizontalAlignment="Left"
-            Margin="22,19,0,0" 
-            VerticalAlignment="Top" 
-            RenderTransformOrigin="0.158,0.269"
-            Height="27" Width="46"/>
-        
-        <TextBox
-            HorizontalAlignment="Left" 
-            Height="23" 
-            Margin="125,23,0,0" 
-            TextWrapping="Wrap" 
-            Name="Login"
-            VerticalAlignment="Top"
-            Width="137"/>
-        
-        <Label 
-            Content="Password*" 
-            HorizontalAlignment="Left"
-            Margin="22,51,0,0" 
-            VerticalAlignment="Top"
-            Width="72"/>
-        
-        <PasswordBox
-            HorizontalAlignment="Left" 
-            Height="23"
-            Margin="125,57,0,0" 
-            Name="Password"
-            VerticalAlignment="Top" 
-            Width="137" />
-        
-        <Label 
-            Content="Phone*"
-            HorizontalAlignment="Left"
-            Margin="22,82,0,0"
-            VerticalAlignment="Top"
-            Width="61"/>
-        
-        <TextBox 
-            HorizontalAlignment="Left"
-            Height="23" 
-            Margin="125,85,0,0"
-            TextWrapping="Wrap" 
-            Name="Phone"
-            VerticalAlignment="Top"
-            Width="137"/>
-        
-        <TextBox
-            HorizontalAlignment="Left"
-            Height="23" 
-            Margin="125,113,0,0" 
-            TextWrapping="Wrap"
-            Name="FavouriteDay"
-            VerticalAlignment="Top"
-            Width="137"/>
-        
-        <Label 
-            Content="Favourite Day"
-            HorizontalAlignment="Left"
-            Margin="22,113,0,0" 
-            VerticalAlignment="Top"
-            Width="87"/>
-        
-        <Label 
-            Content="Favourite Time"
-            HorizontalAlignment="Left" 
-            Margin="22,144,0,0" 
-            VerticalAlignment="Top" 
-            Width="87"/>
-        
-        <TextBox 
-            HorizontalAlignment="Left"
-            Height="23" 
-            Margin="125,147,0,0" 
-            TextWrapping="Wrap"
-            Name="FavouriteTime"
-            VerticalAlignment="Top"
-            Width="137"/>
-        
-        <Button 
-            Content="Exit"
-            HorizontalAlignment="Left" 
-            Height="27"
-            Margin="321,332,0,0" 
-            VerticalAlignment="Top" 
-            Width="57" Click="Exit"/>
+        WindowStartupLocation="CenterScreen"
+        Title="RegistrationWindow" Height="500" Width="500">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="155"/>
+            <ColumnDefinition Width="337"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image Source="back.jpg" Stretch="Fill" Grid.ColumnSpan="2"/>
+        <Grid Grid.ColumnSpan="2">
 
-        <Button 
-            Content="Register now!" 
-            HorizontalAlignment="Left"
-            Height="34" 
-            Margin="132,228,0,0"
-            VerticalAlignment="Top" 
-            Width="111" Click="Registrate"/>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="166"/>
+                <ColumnDefinition Width="55*"/>
+                <ColumnDefinition Width="74*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="120"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+
+            <TextBox
+                Grid.Column="1"
+                Name="Login"
+                Text="Enter your login" Margin="0,5" Grid.Row="1" Grid.ColumnSpan="2" FontFamily="Goudy Old Style" FontSize="36" FontWeight="Bold">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </TextBox.Background>
+            </TextBox>
+
+            <TextBox 
+                Margin="0,5"
+                TextWrapping="Wrap" 
+                x:Name="Phone" Grid.Column="1" Grid.Row="2" Text="Enter your phone" FontFamily="Goudy Old Style" FontSize="36" FontWeight="Bold" Grid.ColumnSpan="2">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </TextBox.Background>
+            </TextBox>
+
+            <PasswordBox
+                Margin="0,5" 
+                x:Name="Password" Grid.Column="1" Grid.Row="3" Password="Password" Grid.ColumnSpan="2" FontFamily="Goudy Old Style" FontSize="36" FontWeight="Bold" >
+                <PasswordBox.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </PasswordBox.Background>
+            </PasswordBox>
+
+            <Label
+                Grid.Column="0"
+                Content="E-mail*"
+                HorizontalAlignment="Right" Margin="0" FontFamily="Goudy Old Style" FontSize="36" FontWeight="Bold" Grid.Row="1">
+                <Label.BorderBrush>
+                    <ImageBrush/>
+                </Label.BorderBrush>
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+            </Label>
+
+            <Label 
+                Content="Password*" Margin="0" Grid.Row="3" FontSize="36" FontWeight="Bold" FontFamily="Goudy Old Style" HorizontalAlignment="Right">
+                <Label.BorderBrush>
+                    <ImageBrush/>
+                </Label.BorderBrush>
+            </Label>
+
+
+            <Label 
+                Content="Phone*" Margin="0" Grid.Row="2" FontSize="36" FontFamily="Goudy Old Style" FontWeight="Bold" HorizontalAlignment="Right">
+                <Label.BorderBrush>
+                    <ImageBrush/>
+                </Label.BorderBrush>
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+            </Label>
+
+
+            <Button 
+                Content="Exit"
+                HorizontalAlignment="Center"
+                Margin="40,0,15,40" 
+                VerticalAlignment="Center" Click="Exit" Grid.Column="2" Grid.Row="4" FontFamily="Goudy Old Style" FontSize="36" FontWeight="Bold" Width="90">
+                <Button.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </Button.Background>
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+            </Button>
+
+            <Button 
+                Content="Registrate" 
+                Margin="80,0,160,40" Click="Registrate" Grid.Row="4" Grid.ColumnSpan="3" FontFamily="Goudy Old Style" FontWeight="Bold" FontSize="36" Grid.RowSpan="2" VerticalAlignment="Center">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </Button.Background>
+            </Button>
+        </Grid>
     </Grid>
 </Window>
