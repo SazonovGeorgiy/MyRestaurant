@@ -14,13 +14,9 @@ namespace ConsoleApp1.Users
             Password = password;
             Login = login;
             Phone = phone;
-            FavouriteDay = day;
-            FavouriteTime = time;
         }
         public string Password { get; set; }
         public long Phone { get; set; }
         public string Login { get; set; }
-        public Enum FavouriteDay { get; set; }
-        public DateTime FavouriteTime { get; set; }
     }
 }

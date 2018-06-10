@@ -11,19 +11,17 @@ using TeamProjectCore;
 namespace ConsoleApp1.Parse_and_Hash
 {
     [DataContract]
-    public static class Registration
+    public static class ReadUsers
     {
         const string FileName = "Users.json";
-        public static void Registrate ()
+        public static void Read()
         {
-            //var userJson = JsonConvert.SerializeObject(user);
-            //File.WriteAllText("Users.json", User.users);
-            using (var sw = new StreamWriter("../../../Users.json"))
+            using (var sr = new StreamReader("../../../Users.json"))
             {
-                using (var writer = new JsonTextWriter(sw))
+                using (var reader = new JsonTextReader(sr))
                 {
                     var serializer = new JsonSerializer();
-                    serializer.Serialize(writer, User.users);
+                    User.users = serializer.Deserialize<List<User>>(reader);
                 }
             }
 

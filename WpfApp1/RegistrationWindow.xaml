@@ -8,7 +8,7 @@
         Title="RegistrationWindow" Height="434.211" Width="410.526">
     <Grid>
         <Label
-            Content="Login*" 
+            Content="E-mail*" 
             HorizontalAlignment="Left"
             Margin="22,19,0,0" 
             VerticalAlignment="Top" 

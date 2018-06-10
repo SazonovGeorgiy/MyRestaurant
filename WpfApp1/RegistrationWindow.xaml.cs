@@ -22,7 +22,7 @@ namespace WpfApp1
     public partial class RegistrationWindow : Window
     {
         User user;
-        List<User> users = new List<User>();
+        
 
         public RegistrationWindow()
         {
@@ -33,8 +33,6 @@ namespace WpfApp1
         {
             var _login = Login.Text;
             var _password = Hashing.GetHash(Password.Password);
-            Enum _day = null;
-            DateTime _time = DateTime.MinValue;
             long.TryParse(Phone.Text, out var _phone);
 
             //Было бы неплохо создать определенный метод CheckData для работы со всем этим добром
@@ -43,14 +41,20 @@ namespace WpfApp1
             {
                 try
                 {
-                    _day = ((DayOfWeek)Enum.Parse(typeof(DayOfWeek), FavouriteDay.Text));
-                    _time = Convert.ToDateTime(FavouriteTime.Text);
-                }
-                catch (FormatException)
-                {
-                    MessageBox.Show("You have to inscribe day of deek in the gap Favourite Day" +
-                        " and time in the gap Favourite Time (Example: Friday," +
-                        " 17:00. Please try again.", "Data Error");
+                    if (CheckEmailOnCorrect())
+                    {
+                        user = new User(_login, _password, _phone);
+                        User.users.Add(user);
+                        Registration.Registrate();
+                        //Необходимо сделать вызов окна доступным только при всех верно введенных данных
+                        var sW = new Successfully();
+                        sW.Show();
+                        Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrectly entered E-mail");
+                    }
                 }
                 catch (ArgumentException)
                 {
@@ -62,15 +66,24 @@ namespace WpfApp1
                 MessageBox.Show("You have to fill the gaps with stars. It's necessary.", "Error");
             }
 
-            user = new User(_login, _password, _phone, _day, _time);
-            Registration.Registrate(user);
-            users.Add(user);
+ 
 
-            //Необходимо сделать вызов окна доступным только при всех верно введенных данных
-            var sW = new Successfully();
-            sW.Show();
-            Close();
+
         }
+
+        public bool CheckEmailOnCorrect()
+        {
+            foreach (char a in Login.Text)
+            {
+                if (a == '@')
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
         public void Exit(object sender, RoutedEventArgs e)
         {
             Close();

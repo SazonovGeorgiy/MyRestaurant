@@ -11,7 +11,5 @@ namespace TeamProjectCore
         string Password { get; set; }
         long Phone { get; set; }
         string Login { get; set; }
-        Enum FavouriteDay { get; set; }
-        DateTime FavouriteTime { get; set; }
     }
 }

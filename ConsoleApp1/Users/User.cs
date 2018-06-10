@@ -9,18 +9,16 @@ namespace TeamProjectCore
 {
     public class User: IUser
     {
-        public User(string login, string password, long phone, Enum day, DateTime time)
+        public static List<User> users = new List<User>();
+        public static User current;
+        public User(string login, string password, long phone)
         {
             Password = password;
             Login = login;
             Phone = phone;
-            FavouriteDay = day;
-            FavouriteTime = time;
         }
         public string Password { get; set; }
         public long Phone { get; set; }
         public string Login { get; set; }
-        public Enum FavouriteDay { get; set; }
-        public DateTime FavouriteTime { get; set; }
     }
 }
