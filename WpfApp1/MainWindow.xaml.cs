@@ -24,17 +24,13 @@ namespace TeamProjectUI
         
         public MainWindow()
         {
-            //double screenHeight = SystemParameters.FullPrimaryScreenHeight;
-            //double screenWidth = SystemParameters.FullPrimaryScreenWidth;
-            //this.Top = (screenHeight - this.Height) / 0x00000002;
-            //this.Left = (screenWidth - this.Width) / 0x00000002;
+
             InitializeComponent();
            
         }
 
         private void Welcome (object sender, RoutedEventArgs e)
         {
-            //FileStream file = File.Open("Users.json", FileMode.OpenOrCreate);
             var lW = new LoginWindow();
             lW.Show();
             Close();
