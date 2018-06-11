@@ -36,9 +36,9 @@ namespace WpfApp1.Notices
             int currentTime = DateTime.Now.Hour;
             Logic logic = new Logic();
             currentTime = logic.TimeHelper(currentTime);
-            List<ScheduleItem> result = logic.FindATable(currentTime, restaurants);
-            var rW = new ResultWindow(result);
-            rW.Show();
+            List<Restaurant> result = logic.FindATable(currentTime, restaurants);
+            //var rW = new ResultWindow(result);
+            //rW.Show();
             Close();
         }
     }
