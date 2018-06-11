@@ -24,9 +24,7 @@ C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Registrati
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\RegistrationWindow.baml
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\VIPWindow.g.cs
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\VIPWindow.baml
-C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\ErrorWindow.g.cs
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\Successfully.g.cs
-C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\ErrorWindow.baml
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\Successfully.baml
 C:\Users\danii\Documents\GitHub\MyRestaurant\WpfApp1\bin\Debug\WpfApp1.exe.config
 C:\Users\danii\Documents\GitHub\MyRestaurant\WpfApp1\bin\Debug\WpfApp1.exe
@@ -90,3 +88,7 @@ C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\MyRestaurant\WpfApp1\obj\Deb
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\MyRestaurant\WpfApp1\obj\Debug\ResultWindow.baml
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\MyRestaurant\WpfApp1\obj\Debug\Notices\SuccessfullyEnter.g.cs
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\MyRestaurant\WpfApp1\obj\Debug\Notices\SuccessfullyEnter.baml
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\SuccessfullyEnter.g.cs
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\ResultWindow.g.cs
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\SuccessfullyEnter.baml
+C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\ResultWindow.baml
