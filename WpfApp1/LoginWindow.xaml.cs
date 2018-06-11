@@ -43,7 +43,7 @@ namespace TeamProjectUI
                 var sW = new Successfully();
                 sW.Show();
                 Close();
-
+                var a = 20;
             }
             else
             {
