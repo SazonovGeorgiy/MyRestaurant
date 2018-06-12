@@ -28,8 +28,6 @@ namespace ConsoleApp1
                         restaurants[i].Schedule.Add(item);
                         break;
                     }
-                   
-
                 }
                 if (!found)
                 {

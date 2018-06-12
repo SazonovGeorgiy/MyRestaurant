@@ -21,23 +21,9 @@ namespace WpfApp1
     public partial class ResultWindow : Window
     {
         List<ScheduleItem> result;
-        public ResultWindow(List<ScheduleItem> result)
+        public ResultWindow(List<Restaurant> result)
         {
             InitializeComponent();
-            //PrintTables(result);
-            Loaded += Tables_Loaded;
         }
-        //public void PrintTables(List <ScheduleItem> result)
-        //{
-        //    foreach (var item in result)
-        //    {
-        //        Result.Text = item._time + item._freetables.ToString();
-        //    }
-        //}
-        private void Tables_Loaded(object sender, RoutedEventArgs e)
-        {
-            Tables.ItemsSource = result;
-        }
-
     }
 }

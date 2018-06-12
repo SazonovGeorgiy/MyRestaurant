@@ -36,8 +36,8 @@ namespace WpfApp1
             Logic logic = new Logic();
             currentTime = logic.TimeHelper(currentTime);
             List<Restaurant> result = logic.FindATable(currentTime, restaurants);
-            //var rW = new ResultWindow(result);
-            //rW.Show();
+            var rW = new ResultWindow(result);
+            rW.Show();
             Close();
         }
         private void Exit(object sender, RoutedEventArgs e)

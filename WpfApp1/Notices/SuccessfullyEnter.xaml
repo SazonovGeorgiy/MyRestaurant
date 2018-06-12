@@ -52,7 +52,7 @@
                 Width="90"
                 Height="41">
                 <Button.Background>
-                    <ImageBrush ImageSource="button.jpg"/>
+                    <ImageBrush ImageSource="/WpfApp1;component/button.jpg"/>
                 </Button.Background>
             </Button>
         </Grid>

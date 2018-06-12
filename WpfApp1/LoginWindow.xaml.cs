@@ -15,6 +15,7 @@ using TeamProjectCore;
 using WpfApp1;
 using ConsoleApp1.Parse_and_Hash;
 using System.Security.Cryptography;
+using WpfApp1.Notices;
 
 namespace TeamProjectUI
 {
@@ -40,10 +41,9 @@ namespace TeamProjectUI
         {
             if (CheckLoginAndPassword())
             {
-                var sW = new Successfully();
+                var sW = new SuccessfullyEnter();
                 sW.Show();
                 Close();
-                var a = 20;
             }
             else
             {
