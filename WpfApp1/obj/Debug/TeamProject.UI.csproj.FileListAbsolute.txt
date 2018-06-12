@@ -92,3 +92,35 @@ C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\Su
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\ResultWindow.g.cs
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\Notices\SuccessfullyEnter.baml
 C:\Users\!\Desktop\Canvas\Team Project\MyRestaurant\WpfApp1\obj\Debug\ResultWindow.baml
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\bin\Debug\WpfApp1.exe.config
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\bin\Debug\WpfApp1.exe
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\bin\Debug\WpfApp1.pdb
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\bin\Debug\ConsoleApp1.dll
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\bin\Debug\ConsoleApp1.dll.config
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\TeamProject.UI.csprojResolveAssemblyReference.cache
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\LoginWindow.g.cs
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\Notices\SuccessfullyEnter.g.cs
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\RegistrationWindow.g.cs
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\Notices\Successfully.g.cs
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\ResultWindow.g.cs
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\VIPWindow.g.cs
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\App.g.cs
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\MainWindow.baml
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\LoginWindow.baml
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\Notices\SuccessfullyEnter.baml
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\RegistrationWindow.baml
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\Notices\Successfully.baml
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\ResultWindow.baml
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\VIPWindow.baml
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\WpfApp1.g.resources
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\WpfApp1.Properties.Resources.resources
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\TeamProject.UI.csproj.GenerateResource.Cache
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\TeamProject.UI.csproj.CoreCompileInputs.cache
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\WpfApp1.exe
+C:\Users\danii\Documents\GitHub\MyRestaurant2\WpfApp1\obj\Debug\WpfApp1.pdb

@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TeamProjectCore;
 
+//main logic
+
 namespace ConsoleApp1
 {
     public class Logic
