@@ -31,12 +31,14 @@ namespace WpfApp1
 
         private void Find (object sender, RoutedEventArgs e)
         {
+            //считываем и парсим, записываем в список
             List<Restaurant> restaurants = JsonParser.ParsIt();
-            int currentTime = DateTime.Now.Hour;
-            Logic logic = new Logic();
-            currentTime = logic.TimeHelper(currentTime);
-            List<Restaurant> result = logic.FindATable(currentTime, restaurants);
-            var rW = new ResultWindow(result);
+            Restaurant.restaurants = restaurants;
+            //int currentTime = DateTime.Now.Hour;
+            //Logic logic = new Logic();
+            //currentTime = logic.TimeHelper(currentTime);
+            //List<Restaurant> result = logic.FindATable(currentTime, restaurants);
+            var rW = new ResultWindow(restaurants);
             rW.Show();
             Close();
         }

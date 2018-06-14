@@ -12,18 +12,28 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using TeamProjectCore;
+using WpfApp1.Notices;
 
 namespace WpfApp1
 {
     /// <summary>
-    /// Логика взаимодействия для ResultWindow.xaml
+    /// Логика взаимодействия для MyReservation.xaml
     /// </summary>
-    public partial class ResultWindow : Window
+    public partial class MyReservation : Window
     {
-        List<ScheduleItem> result;
-        public ResultWindow(List<Restaurant> result)
+        public MyReservation(string time, string tables)
         {
             InitializeComponent();
+            TIME.Text = time;
+            TABLES.Content = tables;
+        }
+
+        
+        private void Back (object sender, RoutedEventArgs e)
+        {
+            var sE = new SuccessfullyEnter();
+            sE.Show();
+            Close();
         }
     }
 }

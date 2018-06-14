@@ -29,7 +29,7 @@
             Grid.Row="1" FontSize="36" FontWeight="Bold" Grid.ColumnSpan="3" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
             <Button 
-            Content="Find Me A Table" 
+            Content="All restaurants" 
             HorizontalAlignment="Center"
             Margin="6,28,2,44" 
             VerticalAlignment="Center"

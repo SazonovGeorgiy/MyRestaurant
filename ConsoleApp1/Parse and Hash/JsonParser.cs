@@ -16,10 +16,17 @@ namespace TeamProjectCore
         const string FileName = "../../../Restaurant.json";
 
         public static List<Restaurant> ParsIt () //Парсинг и распределение по листам
-        {                                          
-            var data  = JsonConvert.DeserializeObject<Restaurants>(File.ReadAllText(FileName));
-            return data.RestaurantsArray; 
-            
+        {
+            List<Restaurant> list = new List<Restaurant>();
+            using (var sr = new StreamReader(FileName))
+            {
+                using (var reader = new JsonTextReader(sr))
+                {
+                    var serializer = new JsonSerializer();
+                    list = serializer.Deserialize<List<Restaurant>>(reader);
+                }
+            }
+            return list; 
         }
     }
 

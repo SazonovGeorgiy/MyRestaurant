@@ -13,10 +13,10 @@ namespace ConsoleApp1.Parse_and_Hash
     [DataContract]
     public static class ReadUsers
     {
-        //const string FileName = "Users.json";
+        const string fileName = "../../../Users.json";
         public static void Read()
         {
-            using (var sr = new StreamReader("../../../Users.json"))
+            using (var sr = new StreamReader(fileName))
             {
                 using (var reader = new JsonTextReader(sr))
                 {

@@ -10,6 +10,7 @@ namespace TeamProjectCore
     [DataContract]
     public class Restaurant
     {
+        public static List<Restaurant> restaurants = new List<Restaurant>();
         [DataMember]
         public string _name;
         [DataMember]

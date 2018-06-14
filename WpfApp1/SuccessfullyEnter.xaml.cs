@@ -25,6 +25,7 @@ namespace WpfApp1.Notices
         {
             InitializeComponent();
         }
+
         private void Exit(object sender, RoutedEventArgs e)
         {
             Close();
@@ -33,13 +34,26 @@ namespace WpfApp1.Notices
         private void Find(object sender, RoutedEventArgs e)
         {
             List<Restaurant> restaurants = JsonParser.ParsIt();
-            int currentTime = DateTime.Now.Hour;
-            Logic logic = new Logic();
-            currentTime = logic.TimeHelper(currentTime);
-            List<Restaurant> result = logic.FindATable(currentTime, restaurants);
-            var rW = new ResultWindow(result);
+            Restaurant.restaurants = restaurants;
+            var rW = new ResultWindow(restaurants);
             rW.Show();
             Close();
+        }
+
+        private void Favorite(object sender, RoutedEventArgs e)
+        {
+            List<Restaurant> restaurants = JsonParser.ParsIt();
+            FavoriteWindow fw = new FavoriteWindow(restaurants);
+            fw.Show();
+            Close();
+        }
+
+        private void AllReservation(object sender, RoutedEventArgs e)
+        {
+            //var rW = new MyReservation();
+            //rW.Show();
+            //Close();
+            
         }
     }
     

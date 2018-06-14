@@ -33,31 +33,40 @@ namespace WpfApp1
         {
             var _login = Login.Text;
             var _password = Hashing.GetHash(Password.Password);
+            var _password2 = Hashing.GetHash(Password2.Password);
             long.TryParse(Phone.Text, out var _phone);
             
             if (_login != "" && _password != "" && Phone.Text != "")
             {
-                try
+                if (_password == _password2)
                 {
-                    if (CheckEmailOnCorrect())
+                    try
                     {
-                        user = new User(_login, _password, _phone);
-                        if (User.users == null) User.users = new List<User>();
-                        User.users.Add(user);
-                        Registration.Registrate();
+                        if (CheckEmailOnCorrect())
+                        {
+                            user = new User(_login, _password, _phone, new List<string>());
+                            if (User.users == null) User.users = new List<User>();
+                            User.users.Add(user);
+                            User.current = user;
+                            Registration.Registrate();
                         
-                        var sW = new Successfully();
-                        sW.Show();
-                        Close();
+                            var sW = new Successfully();
+                            sW.Show();
+                            Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Incorrectly entered E-mail");
+                        }
                     }
-                    else
+                    catch (ArgumentException)
                     {
-                        MessageBox.Show("Incorrectly entered E-mail");
+                        MessageBox.Show("We select tables based on your preferences. Add them please.","Preferences error");
                     }
                 }
-                catch (ArgumentException)
+                else
                 {
-                    MessageBox.Show("We select tables based on your preferences. Add them please.","Preferences error");
+                    MessageBox.Show("Password don't match");
                 }
             }
             else

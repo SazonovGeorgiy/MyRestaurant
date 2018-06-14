@@ -53,6 +53,7 @@
     <Compile Include="Parse and Hash\ReadUsers.cs" />
     <Compile Include="Parse and Hash\Hashing.cs" />
     <Compile Include="Parse and Hash\Registration.cs" />
+    <Compile Include="Parse and Hash\WriteRestaurants.cs" />
     <Compile Include="Users\IUser.cs" />
     <Compile Include="Parse and Hash\JsonParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,0 +1,43 @@
+﻿<Window x:Class="WpfApp1.FavoriteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="FavoriteWindow" Height="456.343" Width="519.372">
+    <Grid>
+        <Image Source="back.jpg" Stretch="Fill"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+
+            <ListBox 
+                Grid.Column="1" 
+                Grid.Row="1"
+                x:Name="RestList"
+                SelectionChanged="Selected"
+                FontSize="25"/>
+            <Button Content="Back" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" Click="Back" Foreground="White" FontFamily="Goudy Old Style" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.623,0.545" Grid.Row="2" Width="60" Height="35">
+                <Button.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </Button.Background>
+            </Button>
+
+        </Grid>
+        <Label Content="Favorites restaurants" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" FontFamily="Goudy Old Style" FontSize="36" FontWeight="Bold" Foreground="White">
+            <Label.Background>
+                <ImageBrush ImageSource="button.jpg"/>
+            </Label.Background>
+        </Label>
+    </Grid>
+</Window>

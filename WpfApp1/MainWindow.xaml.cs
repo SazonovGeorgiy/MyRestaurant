@@ -24,9 +24,7 @@ namespace TeamProjectUI
         
         public MainWindow()
         {
-
-            InitializeComponent();
-           
+            InitializeComponent();  
         }
 
         private void Welcome (object sender, RoutedEventArgs e)

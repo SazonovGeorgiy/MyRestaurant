@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
-        Title="ResultWindow" Height="600" Width="600">
+        Title="ResultWindow" Height="400" Width="400">
     <Grid>
         <Image Source="back.jpg" Stretch="Fill"/>
         <Grid>
@@ -21,13 +21,25 @@
                 <RowDefinition Height="100"/>
             </Grid.RowDefinitions>
 
-                    
+            <Label
+                Content="Choose your restaurant"
+               BorderBrush="Black"
+               Foreground="White" 
+               FontFamily="Goudy Old Style" 
+               FontSize="36"
+               FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="3"/>
+
             <ListBox 
                 Grid.Column="1" 
                 Grid.Row="1"
-                Name="Tables">
-             </ListBox>
+                Name="RestList" 
+                FontSize="20"
+                SelectionChanged="Selected" Margin="0">
+            </ListBox>
 
         </Grid>
+        <Button
+            Content="Back" HorizontalAlignment="Left" Margin="15,497,0,0" VerticalAlignment="Top" Width="75" Click="Back"/>
+
     </Grid>
 </Window>

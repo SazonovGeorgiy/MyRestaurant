@@ -14,9 +14,11 @@ namespace ConsoleApp1.Users
             Password = password;
             Login = login;
             Phone = phone;
+            this.Favorites = Favorites;
         }
         public string Password { get; set; }
         public long Phone { get; set; }
         public string Login { get; set; }
+        public List<string> Favorites { get; set; }
     }
 }

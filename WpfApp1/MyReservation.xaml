@@ -1,0 +1,69 @@
+﻿<Window x:Class="WpfApp1.MyReservation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="MyReservation" Height="400" Width="400">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Resourses/back.JPG"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="75"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Button 
+            Content="Back"
+           FontSize="24"
+           FontWeight="Bold"
+            Foreground="White"
+            Click ="Back" FontFamily="Goudy Old Style" Grid.Column="2" Margin="0" Grid.Row="2">
+            <Button.Background>
+                <ImageBrush ImageSource="button.jpg"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Reservation" HorizontalAlignment="Center" VerticalAlignment="Top" Grid.Column="1" Margin="0,30,0,0" Grid.RowSpan="2" Foreground="White" FontFamily="Goudy Old Style" FontSize="24" FontWeight="Bold">
+            <Label.Background>
+                <ImageBrush ImageSource="button.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Content="You got reservation for this time" HorizontalAlignment="Left" Margin="63,33,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="3" FontFamily="Goudy Old Style" FontSize="20" Foreground="White">
+            <Label.Background>
+                <ImageBrush ImageSource="button.jpg"/>
+            </Label.Background>
+        </Label>
+        <TextBox 
+            Name ="TIME" Grid.Column="1" HorizontalAlignment="Left" Height="30" Margin="54,77,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" FontFamily="Goudy Old Style" FontSize="18" FontWeight="Bold" Foreground="White">
+            <TextBox.Background>
+                <ImageBrush ImageSource="Resourses/button.jpg"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label Content="For" HorizontalAlignment="Left" Margin="6,123,0,0" Grid.Row="1" VerticalAlignment="Top" RenderTransformOrigin="-0.579,-0.308" FontFamily="Goudy Old Style" FontSize="18" Foreground="White" Grid.Column="1">
+            <Label.Background>
+                <ImageBrush ImageSource="button.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label Content="Tables" Grid.Column="1" HorizontalAlignment="Left" Margin="154,123,0,0" Grid.Row="1" VerticalAlignment="Top" FontFamily="Goudy Old Style" FontSize="18" Foreground="White">
+            <Label.Background>
+                <ImageBrush ImageSource="button.jpg"/>
+            </Label.Background>
+        </Label>
+        <Label x:Name="TABLES" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="57,123,0,0" Grid.Row="1" VerticalAlignment="Top" Foreground="White" Width="91" Height="33" FontFamily="Goudy Old Style" FontSize="18" FontWeight="Bold">
+            <Label.Background>
+                <ImageBrush ImageSource="button.jpg"/>
+            </Label.Background>
+        </Label>
+
+
+    </Grid>
+</Window>

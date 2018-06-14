@@ -27,7 +27,7 @@ namespace TeamProjectUI
         public LoginWindow()
         {
             InitializeComponent();
-            ReadUsers.Read();
+            ReadUsers.Read();               //Считывание пользователей из Json
         }
 
         private void Registration (object sender, RoutedEventArgs e)
@@ -39,7 +39,7 @@ namespace TeamProjectUI
 
         private void Enter(object sender, RoutedEventArgs e)
         {
-            if (CheckLoginAndPassword())
+            if (CheckLoginAndPassword())                    //Проверяем на корректно введеные данные
             {
                 var sW = new SuccessfullyEnter();
                 sW.Show();
@@ -64,7 +64,7 @@ namespace TeamProjectUI
             {
                 foreach (User user in User.users)
                 {
-                    if (Login.Text == user.Login && GetHash(Password.Password) == user.Password)
+                    if (Login.Text == user.Login && Hashing.GetHash(Password.Password) == user.Password)
                     {
                         User.current = user;
                         return true;
@@ -73,13 +73,5 @@ namespace TeamProjectUI
             }
             return false;
         }
-
-        public static string GetHash(string password)
-        {
-            var md5 = MD5.Create();
-            var hash = md5.ComputeHash(Encoding.UTF8.GetBytes(password));
-            return Convert.ToBase64String(hash);
-        }
-
     }
 }

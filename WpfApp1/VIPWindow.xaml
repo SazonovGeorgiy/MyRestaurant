@@ -14,44 +14,68 @@
                 Content="Confirm"
                 HorizontalAlignment="Left"
                 Height="34"
-                Margin="83,166,0,0"
+                Margin="84,200,0,0"
                 VerticalAlignment="Top"
                 Width="113"
-                Click="Confirm"/>
+                Click="Confirm" FontFamily="Goudy Old Style" FontSize="20" FontWeight="Bold" Foreground="White">
+                <Button.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </Button.Background>
+            </Button>
 
             <Label 
                 Content="Login" 
                 HorizontalAlignment="Left"
-                Height="28" 
+                Height="37" 
                 Margin="22,33,0,0" 
                 VerticalAlignment="Top"
-                Width="74"/>
+                Width="74" FontFamily="Goudy Old Style" FontSize="22" FontWeight="Bold" Foreground="White">
+                <Label.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </Label.Background>
+            </Label>
 
             <Label
                 Content="Password"
                 HorizontalAlignment="Left" 
                 Height="29" 
-                Margin="22,76,0,0"
+                Margin="11,74,0,0"
                 VerticalAlignment="Top"
-                Width="74"/>
+                Width="91" FontFamily="Goudy Old Style" FontSize="20" FontWeight="Bold" Foreground="White">
+                <Label.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </Label.Background>
+            </Label>
 
             <TextBox
                 HorizontalAlignment="Left"
                 Height="28"
-                Margin="96,33,0,0" 
+                Margin="113,36,0,0" 
                 TextWrapping="Wrap"
-                Text="L"
                 VerticalAlignment="Top" 
-                Width="90"/>
+                Width="90">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </TextBox.Background>
+                <TextBox.Foreground>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </TextBox.Foreground>
+            </TextBox>
 
             <TextBox 
                 HorizontalAlignment="Left"
                 Height="29" 
-                Margin="101,76,0,0" 
-                TextWrapping="Wrap"
-                Text="P" 
+                Margin="116,74,0,0" 
+                TextWrapping="Wrap" 
                 VerticalAlignment="Top" 
-                Width="85"/>
+                Width="85">
+                <TextBox.Background>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </TextBox.Background>
+                <TextBox.BorderBrush>
+                    <ImageBrush ImageSource="button.jpg"/>
+                </TextBox.BorderBrush>
+            </TextBox>
 
         </Grid>
     </Grid>

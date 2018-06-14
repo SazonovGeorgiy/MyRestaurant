@@ -27,20 +27,20 @@
                 Content="Login"
                 FontSize="36" 
                 Grid.Row="1"
-                Grid.Column="1" HorizontalAlignment="Right" FontFamily="Goudy Old Style" FontWeight="Bold"/>
+                Grid.Column="1" HorizontalAlignment="Right" FontFamily="Goudy Old Style" FontWeight="Bold" Foreground="White"/>
 
             <Label 
                 Content="Password"
                 FontSize="36"
                 Grid.Row="2"
-                Grid.Column="1" HorizontalAlignment="Right" FontFamily="Goudy Old Style" FontWeight="Bold"/>
+                Grid.Column="1" HorizontalAlignment="Right" FontFamily="Goudy Old Style" FontWeight="Bold" Foreground="White"/>
 
             <TextBox 
                 Text="Enter Login "
                 Name="Login"
                 Margin="5"
                 Grid.Column="2" 
-                Grid.Row="1" FontSize="36" SelectionBrush="White" FontFamily="Goudy Old Style">
+                Grid.Row="1" FontSize="36" SelectionBrush="White" FontFamily="Goudy Old Style" Foreground="#FFFBFBFB">
                 <TextBox.Background>
                     <ImageBrush ImageSource="button.jpg"/>
                 </TextBox.Background>
@@ -51,7 +51,7 @@
                 Grid.Column="2" Grid.Row="2" 
                 Password="Password" 
                 Margin="5"
-                FontSize="36" SelectionBrush="White" FontFamily="Goudy Old Style" OpacityMask="Black">
+                FontSize="36" SelectionBrush="White" FontFamily="Goudy Old Style" OpacityMask="Black" Foreground="White">
                 <PasswordBox.Background>
                     <ImageBrush ImageSource="button.jpg"/>
                 </PasswordBox.Background>
@@ -63,7 +63,7 @@
                 FontSize="36"
                 Grid.Row="4" 
                 Grid.ColumnSpan="3" 
-                Margin="15,10,50,10" FontFamily="Goudy Old Style" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                Margin="15,10,50,10" FontFamily="Goudy Old Style" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Bottom" Foreground="White">
                 <Button.BorderBrush>
                     <ImageBrush/>
                 </Button.BorderBrush>
@@ -79,7 +79,7 @@
                 Grid.Row="3" 
                 FontSize="36"
                 Margin="30"
-                Grid.ColumnSpan="2" FontFamily="Goudy Old Style" FontWeight="Bold" Height="50">
+                Grid.ColumnSpan="2" FontFamily="Goudy Old Style" FontWeight="Bold" Height="50" Foreground="White">
                 <Button.BorderBrush>
                     <ImageBrush/>
                 </Button.BorderBrush>
@@ -94,7 +94,7 @@
                 Margin="50"
                 Grid.Column="2" 
                 Grid.Row="3"
-                FontSize="36" FontWeight="Bold" FontFamily="Goudy Old Style">
+                FontSize="36" FontWeight="Bold" FontFamily="Goudy Old Style" Foreground="White">
                 <Button.BorderBrush>
                     <ImageBrush/>
                 </Button.BorderBrush>

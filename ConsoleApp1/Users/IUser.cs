@@ -11,5 +11,6 @@ namespace TeamProjectCore
         string Password { get; set; }
         long Phone { get; set; }
         string Login { get; set; }
+        List<string> Favorites { get; set; }
     }
 }

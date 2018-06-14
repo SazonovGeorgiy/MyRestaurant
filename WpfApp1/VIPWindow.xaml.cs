@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfApp1.Notices;
 
 namespace WpfApp1
 {
@@ -26,6 +27,8 @@ namespace WpfApp1
 
         private void Confirm(object sender, RoutedEventArgs e)
         {
+            var sE = new SuccessfullyEnter();
+            sE.Show();
             Close();
         }
     }
